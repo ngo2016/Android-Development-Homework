@@ -60,4 +60,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btnTest"
         app:layout_constraintStart_toStartOf="@+id/btnTest"
         app:layout_constraintTop_toBottomOf="@+id/btnTest" />
+
+    <Button
+        android:id="@+id/btnBt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Bài tập 4"
+        app:layout_constraintEnd_toEndOf="@+id/btnBt5"
+        app:layout_constraintStart_toStartOf="@+id/btnBt5"
+        app:layout_constraintTop_toBottomOf="@+id/btnBt5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

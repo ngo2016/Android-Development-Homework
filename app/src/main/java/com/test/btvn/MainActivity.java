@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 //    TextView resultText;
 
     //    ImageView img;
-    Button btnBt1, btnBt2, btnBt6, btnTest, btnBt5;
+    Button btnBt1, btnBt2, btnBt6, btnTest, btnBt5, btnBt4;
 
     void SetControl() {
 //        android = findViewById(R.id.android);
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnBt6 = findViewById(R.id.btnBt6);
         btnTest = findViewById(R.id.btnTest);
         btnBt5 = findViewById(R.id.btnBt5);
+        btnBt4 = findViewById(R.id.btnBt4);
 
     }
 
@@ -100,6 +101,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent bt5 = new Intent(getApplicationContext(), Bt5Chuong2.class);
                 startActivity(bt5);
+            }
+        });
+
+        btnBt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent bt4 = new Intent(getApplicationContext(), Bt4Chuong2.class);
+                startActivity(bt4);
             }
         });
     }

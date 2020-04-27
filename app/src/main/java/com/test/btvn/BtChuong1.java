@@ -39,7 +39,7 @@ public class BtChuong1 extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(txtA != null && txtB != null){
+                if(!txtA.getText().toString().matches("") && !txtB.getText().toString().matches("")){
                     numA = Float.valueOf(txtA.getText().toString());
                     numB = Float.valueOf(txtB.getText().toString());
                     float tong;
@@ -53,7 +53,7 @@ public class BtChuong1 extends AppCompatActivity {
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(txtA != null && txtB != null){
+                if(!txtA.getText().toString().matches("") && !txtB.getText().toString().matches("")){
                     numA = Float.valueOf(txtA.getText().toString());
                     numB = Float.valueOf(txtB.getText().toString());
                     float hieu = numA - numB;
@@ -66,7 +66,7 @@ public class BtChuong1 extends AppCompatActivity {
         btnMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(txtA != null && txtB != null){
+                if(!txtA.getText().toString().matches("") && !txtB.getText().toString().matches("")){
                     numA = Float.valueOf(txtA.getText().toString());
                     numB = Float.valueOf(txtB.getText().toString());
                     float tich = numA * numB;
@@ -79,7 +79,7 @@ public class BtChuong1 extends AppCompatActivity {
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(txtA != null && txtB != null){
+                if(!txtA.getText().toString().matches("") && !txtB.getText().toString().matches("")){
                     numA = Float.valueOf(txtA.getText().toString());
                     numB = Float.valueOf(txtB.getText().toString());
                     if(numB == 0){
